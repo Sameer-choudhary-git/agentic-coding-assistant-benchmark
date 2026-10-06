@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.venv/
+.env
+.env.*
+!.env.example
+runs/*
+!runs/.gitkeep
+__pycache__/
+.pytest_cache/
+.coverage
+.DS_Store

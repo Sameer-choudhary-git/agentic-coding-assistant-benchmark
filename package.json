@@ -1,0 +1,22 @@
+{
+  "name": "agentic-coding-assistant-benchmark",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reproducible task benchmark scaffold for agentic coding assistants",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx --test src/*.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": { "express": "^5.1.0" },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
